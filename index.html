@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallop</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="mediaqueries.css"/>
+
+
+</head>
+<body>
+    <nav id="desktop-nav">
+       <div class="logo"><h1>Gallop</h1></div>
+       <div>
+       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+       </ul>
+       </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><h1>Gallop</h1></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#products" onclick="toggleMenu()">Products</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+<hr>
+
+<section id="home">
+    <img src="">
+ <div class="home-text">
+    <h1>Style for Everyone<br>at Gallop</h1>
+    <br>
+    <p>Your go-to online destination for quality streatwear in South A frica.<br>From cozy sweaters to fresh tees and matching sets - we've got your<br> wardrobe covered</p>
+     <br>
+    <button class="btn1"><a href="#products">Shop Now</a></button>
+    <button class="btn2"><a href="#products">View Collection</a></button>
+
+ </div>
+
+
+</section>
+<br>
+<br>
+
+
+<section id="products">
+    <h1 style="text-align:center ">What We Offer</h1>
+    <br>
+    <p style="text-align:center ;color: rgb(63, 63, 63);">Quality clothing for all. Shop our collection of essentials and statement pieces</p>
+    <br>
+    <div class="product-containers">
+    <div class="product-container-info">
+        <img src="">
+        <h3>T-shirts</h3>
+        <br>
+        <p>Classic tees in various colors and styles. Comfortable, versatile, and perfect for everyday wear.</p>
+        <br>
+        <a href="">Shop T-Shirts →</a>
+        <br>
+        <br>
+    </div>
+    <div class="product-container-info">
+        <img src="">
+        <h3>Tee & Short Sets</h3>
+        <br>
+        <p>Mathcing sets for effortless style. Perfect for relaxed days or summer vibes</p>
+        <br>
+        <a href="">Shop Sets →</a>
+    </div>
+    <div class="product-container-info">
+        <img src="">
+        <h3>Sweaters</h3>
+        <br>
+        <p>Cozy and stylish sweaters to keep you warm. Quality fabric that lasts</p>
+        <br>
+        <a href="">Shop Sweaters →</a>
+    </div>
+    <div class="product-container-info">
+        <img src="">
+        <h3>Perfume</h3>
+        <br>
+        <p>Our signature fragrance is on the way. Stay tuned for the launch</p>
+        <br>
+        <a href="">Notify Me →</a>
+    </div>
+</div>
+</div>
+</section>
+
+
+ <section id="about">
+    <img src="">
+    <div class="about-text">
+        <h1>About Gallop</h1>
+        <br>
+        <p>Gallop is a proudly South African online clothing brand bringing you fresh,
+            quality streetwear from the comfort of your home. We're all about making
+            fashion accessible and inclusive for everyone.
+            <br>
+            As a small local business , we're committed to providing you with comfortable,
+            stylish pieces that don't break the bank.Our non.binary collection ensures that great stlyee knows no boundries.
+            <br>
+            Plus, we're excited to announce our upcoming perfume line-stay tuned for that launch!
+        </p>      
+    </div>
+</section>
+
+<section id="contact">
+    <h1 style="text-align:center">Get in Touch</h1>
+    <br>
+    <p style="text-align:center; color:rgb(91, 90, 90)">Have questions? We're here to help! Reach out and we'll get back to you soon.</p>
+    <div class="contact-container">
+        <div class="contact-info-container">
+        <div class="contact-info">
+            <h3>Online Store</h3>
+            <br>
+            <p>We're a 100% online business based in South Africa.<br>Shop anytime, from anywhere</p>
+            <br>
+        </div>
+        <div class="contact-info">
+            <h3>WhatsApp Us</h3>
+            <br>
+            <p>+27 xx xxx xxx<br> Available during business hours</p>
+            <br>
+        </div>
+        <div class="contact-info">
+            <h3>Email Us</h3>
+             <br>
+             <p>info@gallop.co.za<br>We'll respond within 24 hours</p>
+        </div>
+    
+    <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form action="" method="POST">
+            <label>
+                Your email
+                <input type="email" name="email">
+
+            </label>
+            <label>
+                Your message
+                <textarea name="message"></textarea>
+            </label>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <div class="contact-info-socials">
+        <div class="contact-info">
+            <h3>Follow Us</h3>
+            <p>Stay updated with our latest drops and exclusive offers</p>
+            <br>
+            <button ><a href="">Instagram</a></button>
+            <button><a href="">Facebook</a></button>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+</body>
+<footer>
+
+</footer>
+
+</html>
+<script src="script.js"></script>
