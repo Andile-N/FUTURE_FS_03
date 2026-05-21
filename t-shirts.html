@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallop</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="mediaqueries.css"/>
+
+
+</head>
+<body>
+    <nav id="menu">
+       <div class="logo"><h1>Gallop</h1></div>
+       <div>
+       <ul class="nav-links">
+        <li><a href="/index.html"> Go back Home</a></li>        
+       </ul>
+       </div>
+    </nav>
+
+<hr>
+<br>
+<br>
+<section id="item-cards">
+    <!--Item card-->
+
+    <div class="card">
+        <img src="">
+        <div class="card-content">
+            <br>
+            <h2 class="item-name">Black Gallop Tee</h2>
+            <br>
+            <p class="price">R190.00</p>
+            <br>
+            <p>Available sizes:</p>
+             <select class="size-select">
+                <option value="Small">S</option>
+                <option value="Medium">M</option>
+                <option value="Larger">L</option>
+                <option value="XL">XL</option>
+             </select>
+             <br>
+             <button class="cart-btn" onclick="sendToWhatsApp('Black Gallop Tee','R190.00',this.previousElementSibling.value)">Add to Cart</button>
+             </div>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
