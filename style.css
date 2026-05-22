@@ -8,9 +8,7 @@
 }
 
 /*Desktop menu*/
-.body{
-    background-color: #b4b4b4;
-}
+
 #desktop-nav{
     background-color: #faf6f0;
     
@@ -374,7 +372,7 @@ font-size: 1.2rem
     padding:20px;
 }
 footer{
-   background-image:url(/images/background\ img3.png);
+   background-image:url(/images/background\ image.png);
    background-repeat: no-repeat;
    background-size:cover;
 }
@@ -386,4 +384,186 @@ footer a{
 footer a:hover{
     color:#e8b86d;
     text-decoration: none;
+}
+
+
+
+/*product-cards*/
+
+
+
+.card{
+    max-width:340px;
+    width:100%;
+    background:#ffffff;
+    border-radius:1.5rem;
+    overflow:hidden;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    transition:transform 0.2s;
+    
+}
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card img{
+    background: linear-gradient(135deg, #FF9A9E, #FAD0C4, #FAD961,#A1C4FD);
+    height:270px;
+    width:fit-content;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+}
+
+.card-content{
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    gap:12px;
+}
+.size-btn{
+    min-width:38px;
+    height:38px;
+    padding:0;
+    border:1.5px solid var(--input-bg);
+    color:var(--dark);
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight:600;
+    border-radius:8px;
+    cursor:pointer;
+    transition:background 0.18s;
+    border: color 0.18s;
+}
+.size-btn:hover{
+    background:#e8b86d;
+}
+.cart-btn{
+    background-color: #c94f14;
+    color:white;
+    border:none;
+    width:100%;
+    padding:12px;
+    border-radius:60px;
+    font-weight:700;
+    font-size:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    cursor:pointer;
+    transition:0.2s;
+    font-family:sans-serif;
+
+}
+.cart-btn:hover{
+    background:#ff5601;
+    transform: scale(0.98);
+}
+.size-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+}
+ .size-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #475569;
+            display: block;
+            margin-bottom: 8px;
+}
+
+.title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+}
+#item-cards{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    align-items:stretch;
+    gap:20px;
+}
+
+
+
+
+
+ #item-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+            padding: 1rem;
+}
+.card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 260px;
+            transition: transform 0.2s;
+}
+.card:hover {
+            transform: translateY(-4px);
+}
+        
+.card-content {
+            padding: 1rem;
+}
+.size-group {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+}
+.size-btn {
+            background: #f0f0f0;
+            border: none;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.2s;
+}
+.size-btn.active {
+            background: #1e293b;
+            color: white;
+}
+.cart-btn {
+            background: #c94f1e;
+            color: white;
+            border: none;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.2s;
+}
+.cart-btn:hover {
+            background: #a03d16;
+            transform: scale(0.98);
+}
+.toast-notification {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #25D366;
+            color: #0a2c1c;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            font-family: sans-serif;
 }
