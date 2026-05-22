@@ -81,9 +81,12 @@
     <br>
     <p style="text-align:center ;color:#7a6652; font-size: 18px; font-family:sans-serif;">Quality clothing for all. Shop our collection of essentials and statement pieces</p>
     <br>
-    <div class="product-cards">
-    <div class="product-container-info">
+
+<div class="cards">
+    <div class="card">
         <img src="/images/T-Shirts.png">
+    <div class="card-content">
+        
         <h3 style="font-family: sans-serif; font-size: 18px; color:#1a1208">T-shirts</h3>
         <br>
         <p>Classic tees in various colors and styles. Comfortable, versatile, and perfect for everyday wear.</p>
@@ -92,32 +95,50 @@
         <br>
         <br>
     </div>
-    <div class="product-container-info">
-        <img src="/images/tee&short.jpeg">
+</div>
+
+         
+
+<div class="card">
+        <img src="/images/tee&short-1.png">
+    <div class="card-content">
+        
         <h3 style="font-family: sans-serif; font-size: 18px; color:#1a1208">Tee & Short Sets</h3>
         <br>
         <p>Matching sets for effortless style. Perfect for relaxed days or summer vibes</p>
         <br>
         <a href="/tees&shorts.html" style="color: #c94f1e;">Shop Sets →</a>
     </div>
-    <div class="product-container-info">
+    </div>
+
+    <div class="card">
         <img src="/images/hoodies - Copy.png">
+    <div class="card-content">
+        
         <h3 style="font-family: sans-serif; font-size: 18px; color:#1a1208">Sweaters</h3>
         <br>
         <p>Cozy and stylish sweaters to keep you warm. Quality fabric that lasts</p>
         <br>
         <a href="/sweaters.html" style="color: #c94f1e;">Shop Sweaters →</a>
     </div>
-    <div class="product-container-info">
-        <img src="/images/perfume.png">
+    </div>
+
+    <div class="card">
+      <img src="/images/perfume.png">
+    <div class="card-content">
+       
         <h3 style="font-family: sans-serif; font-size: 18px; color:#1a1208">Perfume</h3>
         <br>
         <p>Our signature fragrance is on the way. Stay tuned for the launch</p>
         <br>
-        <a href="" style="color: #c94f1e;">Notify Me →</a>
+        <a href="#" class="notify-link" style="color: #c94f1e; ">Notify Me →</a>
     </div>
 </div>
+
+
+
 </div>
+
 </section>
 
 
@@ -240,13 +261,13 @@
         <h3 style="font-family: sans-serif; color:#ffffff">SHOP</h3>
         <br>
         <a href="/t-shirts.html">T-Shirts</a><br>
-        <a href="/tees&shorts.html">Tee & Short</a>
+        <a href="/tees&shorts.html">Tee & Short</a><br>
         <a href="/sweaters.html">Sweaters</a>
     </div>
     <div class="footer-info">
         <h3 style="font-family: sans-serif; color:#ffffff">INFO</h3>
         <br>
-        <a href="#about">About Us</a>
+        <a href="#about">About Us</a><br>
         <a href="">Delivery Info</a><br>
         <a href="">Returns Policy</a>
     </div>
@@ -271,3 +292,44 @@
 
 </html>
 <script src="script.js"></script>
+
+
+
+<script>
+    // WhatsApp business number (change to your number)
+    const BUSINESS_NUMBER = "27719679827"; // Your WhatsApp number (international format, no +)
+    
+    // Function to send WhatsApp message
+    function sendWhatsAppMessage(itemName, messageType) {
+        let message = "";
+        
+        if (messageType === "notify") {
+            message = `🔔 *Product Notification Request*%0A%0A👕 Product: ${itemName}%0A📢 I would like to be notified when this product becomes available!%0A%0AThank you! 🙌`;
+        } else if (messageType === "order") {
+            message = `🛍️ *New Order from Gallop*%0A%0A👕 Product: ${itemName}%0A%0AThank you for shopping with Gallop! 🙌`;
+        }
+        
+        const whatsappUrl = `https://wa.me/${BUSINESS_NUMBER}?text=${message}`;
+        window.open(wh礼物sappUrl, '_blank');
+    }
+    
+    // Fix the Notify Me link for Perfume
+    document.addEventListener('DOMContentLoaded', function() {
+        const notifyLink = document.querySelector('.notify-link');
+        if (notifyLink) {
+            notifyLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                sendWhatsAppMessage("Gallop Signature Perfume", "notify");
+            });
+        }
+        
+        // If you have any other "Notify Me" buttons/links, add them here
+        const anyNotifyButtons = document.querySelectorAll('[data-notify="true"], .notify-btn');
+        anyNotifyButtons.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const productName = btn.getAttribute('data-product') || "Gallop Perfume";
+                sendWhatsAppMessage(productName, "notify");
+            });
+        });
+    });
