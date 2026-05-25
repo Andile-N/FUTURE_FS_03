@@ -31,10 +31,12 @@
               <span></span>
         </div>
         <div class="menu-links">
+            <ul>
             <li><a href="#home" onclick="toggleMenu()">Home</a></li>
             <li><a href="#products" onclick="toggleMenu()">Products</a></li>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
         </div>
         </div>
     </nav>
@@ -221,31 +223,60 @@
             <h3 style="font-family: sans-serif; font-size: 16px; color:#1a1208">Follow Us</h3>
             <p style="font-size: 14px;">Stay updated with our latest drops and exclusive offers</p>
             <br>
-             <a href=""><button ><b>Instagram</b></button></a>
-             <a href=""><button><b>Facebook</b></button></a>
+            
+             <a href="https://www.facebook.com/share/1HmYq7ojdi/"><button><b>Facebook</b></button></a>
             </div>
             </div>
     
-        <div class="contact-form">
-        <h3 style="font-family: sans-serif; font-size: 16px; color:#1a1208">Send us a Message</h3>
-        <br>
-        <form action="https://formspree.io/f/mykorpok" method="POST">
-            <label>
-                Your email
-                <input type="email" name="email">
-
-            </label>
-            <label>
-                Your message
-                <textarea name="message"></textarea>
-            </label>
-            <br>
-            <button type="submit">Send</button>
-        </form>
-       </div>
+        
      </div>
     
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        if (menu && icon) {
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        
+        if (menu && icon && hamburgerMenu && menu.classList.contains('open')) {
+            if (!hamburgerMenu.contains(event.target)) {
+                menu.classList.remove('open');
+                icon.classList.remove('open');
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
 
 
 </body>
@@ -285,13 +316,13 @@
 <hr>
 <br>
 
-        <p style="text-align: center;padding: 20px; color:#b7b7b7">&copy; 2026 Gallop. Proudly South African All rights reserved.</p>
+        <p style="text-align: center;padding: 20px; color:#b7b7b7">@ 2026 Gallop. Proudly South African All rights reserved.</p>
         
 
 </footer>
 
 </html>
-<script src="script.js"></script>
+<script src="script.js"></script>    
 
 
 
@@ -333,3 +364,5 @@
             });
         });
     });
+
+
