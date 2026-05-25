@@ -240,7 +240,7 @@ We are also excited to expand the Gallop brand with an upcoming perfume line , s
             <h3 style="font-family: sans-serif; font-size: 16px; color:#1a1208">Follow Us</h3>
             <p style="font-size: 14px;">Stay updated with our latest drops and exclusive offers</p>
             <br>
-            
+          
              <a href="https://www.facebook.com/share/1HmYq7ojdi/"><button><b>Facebook</b></button></a>
             </div>
             </div>
@@ -323,7 +323,7 @@ We are also excited to expand the Gallop brand with an upcoming perfume line , s
         <h3 style="font-family: sans-serif; color:#ffffff">CONNECT</h3>
         <br>
         <a href="#contact">Contact Us</a>
-        <a href="https://www.instagram.com/gallop.co.za/">Instagram</a><br>
+        
         <a href="https://www.facebook.com/gallop.co.za/">Facebook</a>
     </div>
 </div>
@@ -339,27 +339,32 @@ We are also excited to expand the Gallop brand with an upcoming perfume line , s
 </footer>
 
 </html>
-<script src="script.js"></script>    
+<!--<script src="script.js"></script>    -->
 
 
 
 <script>
     // WhatsApp business number (change to your number)
-    const BUSINESS_NUMBER ="275214474"; // Your WhatsApp number (international format, no +)
+     const BUSINESS_NUMBER = "27725214474";
     
     // Function to send WhatsApp message
-    function sendWhatsAppMessage(itemName, messageType) {
-        let message = "";
-        
-        if (messageType === "notify") {
-            message = `🔔 *Product Notification Request*%0A%0A👕 Product: ${itemName}%0A📢 I would like to be notified when this product becomes available!%0A%0AThank you! 🙌`;
-        } else if (messageType === "order") {
-            message = `🛍️ *New Order from Gallop*%0A%0A👕 Product: ${itemName}%0A%0AThank you for shopping with Gallop! 🙌`;
-        }
-        
-        const whatsappUrl = `https://wa.me/${BUSINESS_NUMBER}?text=${message}`;
-        window.open(wh礼物sappUrl, '_blank');
+   function sendWhatsAppMessage(itemName, messageType) {
+
+    let message = "";
+
+    if (messageType === "notify") {
+        message = `Product Notification Request\n\nProduct: ${itemName}\nI would like to be notified when this product becomes available!\n\nThank you!`;
+    } 
+    else if (messageType === "order") {
+        message = `New Order from Gallop\n\nProduct: ${itemName}\n\nThank you for shopping with Gallop!`;
     }
+
+    const encodedMessage = encodeURIComponent(message);
+
+    const whatsappUrl = `https://wa.me/${BUSINESS_NUMBER}?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, "_blank");
+}
     
     // Fix the Notify Me link for Perfume
     document.addEventListener('DOMContentLoaded', function() {
@@ -382,4 +387,4 @@ We are also excited to expand the Gallop brand with an upcoming perfume line , s
         });
     });
 
-
+</script>

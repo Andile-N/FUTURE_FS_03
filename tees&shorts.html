@@ -139,11 +139,14 @@
         const allCards = document.querySelectorAll('.card');
         
         // Helper function to send WhatsApp message
-        function sendToWhatsApp(itemName, size, price) {
-            const message = `🛍️ *New Order from Gallop*%0A%0A👕 Product: ${itemName}%0A📏 Size: ${size}%0A💰 Price: R${price}%0A%0AThank you for shopping with Gallop! 🙌`;
-            const whatsappUrl = `https://wa.me/27719679827?text=${message}`;
-            window.open(whatsappUrl, '_blank');
-        }
+       function sendToWhatsApp(itemName, size, price) {
+
+    const message = `*New Order from Gallop*\n\n🛍️ Product: ${itemName}\n📏 Size: ${size}\n💰 Price: R${price}`;
+
+    const url = `https://wa.me/27725214474?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+}
         
         // Loop through each card and set up its functionality
         allCards.forEach((card) => {

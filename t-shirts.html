@@ -216,15 +216,14 @@
 </section>
 
 <script>
-    // WhatsApp order functionality for all cards
-    (function() {
+     (function() {
         // Get all product cards
         const allCards = document.querySelectorAll('.card');
         
         // Helper function to send WhatsApp message
         function sendToWhatsApp(itemName, size, price) {
             const message = `🛍️ *New Order from Gallop*%0A%0A👕 Product: ${itemName}%0A📏 Size: ${size}%0A💰 Price: R${price}%0A%0AThank you for shopping with Gallop! 🙌`;
-            const whatsappUrl = `https://wa.me/27719679827?text=${message}`;
+            const whatsappUrl = `https://wa.me/27725214474?text=${message}`;
             window.open(whatsappUrl, '_blank');
         }
         
