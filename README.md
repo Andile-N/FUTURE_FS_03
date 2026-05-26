@@ -141,3 +141,32 @@ Special thanks to:
 - Gallop
 - Future Interns
 - Open-source web development tools and communities
+
+
+
+
+## 🎤 Project Pitch
+
+Gallop is a proudly South African streetwear brand focused on delivering stylish, affordable, and inclusive fashion. The brand started from a passion for original fashion and has grown into a developing local business with a strong identity and vision.
+
+I created this website to help Gallop build a stronger online presence and present the brand more professionally to customers. Before the website, the business mainly relied on social media and WhatsApp communication, which made it difficult for customers to browse products easily in one place.
+
+The website helps solve this by giving customers a clean and modern platform where they can explore products, learn about the brand, view collections, and place orders directly through WhatsApp. The responsive design also makes the website accessible on both mobile and desktop devices.
+
+This project demonstrates how modern websites can help local businesses improve customer trust, increase visibility, and create a smoother online shopping experience.
+
+## 🎨 Figma Design
+
+View the UI/UX design prototype here:
+
+[View Figma Design](https://www.figma.com/make/8bVNandGwhAd7F1h880m37/Clothing-Brand-Website?t=3z7KVfb5NsFJ46Gl-1)
+
+
+## 🔗 Live Demo
+
+https://gallopstore.netlify.app
+
+
+
+
+
